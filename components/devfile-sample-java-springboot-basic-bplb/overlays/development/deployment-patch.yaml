@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-java-springboot-basic-bplb
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-ocys-tenant/e2e-springboot/devfile-sample-java-springboot-basic-bplb@sha256:9fabe20b62050169fe8e4ed6a2a11dde1a3913e06973b20d170002714826864f
+        name: my-java-springboot
+        resources: {}
+status: {}

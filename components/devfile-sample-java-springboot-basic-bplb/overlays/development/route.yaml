@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: devfile-sample-java-springboot-basic-bplb
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: devfile-sample-java-springboot-basic-bplb
+    app.kubernetes.io/part-of: e2e-springboot
+  name: devfile-sample-java-sprinyygk
+spec:
+  path: /
+  port:
+    targetPort: 8081
+  to:
+    kind: Service
+    name: devfile-sample-java-springboot-basic-bplb
+    weight: null
+status: {}
